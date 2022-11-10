@@ -1,0 +1,16 @@
+var c = 1
+while (c < 6) {
+    console.groupCollapsed('Olá, tudo bem!')
+}
+
+
+
+/*
+console.groupCollapsed('Olá, tudo bem!')
+console.groupCollapsed('Olá, tudo bem!')
+console.groupCollapsed('Olá, tudo bem!')
+console.groupCollapsed('Olá, tudo bem!')
+console.groupCollapsed('Olá, tudo bem!')
+console.groupCollapsed('Olá, tudo bem!')
+*/
+

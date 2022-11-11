@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="wrapper connections">
+      <section class="d-flex-section">
+        <header>
+          <h1>Tabuada</h1>
+        </header>
+        <form>
+          <div>
+            <label for="txtn">Número:</label>
+            <input type="number" name="txtn" id="txtn" />
+          </div>
+          <div class="d-flex-section">
+            <input
+              type="button"
+              id="btn"
+              value="Gerar"
+              onclick="multiplicar()"
+            />
+          </div>
+          <div class="d-flex-section">
+            <select name="tabuada" id="seltab" size="10">
+              <option>Digite um número acima.</option>
+            </select>
+          </div>
+        </form>
+      </section>
+      <footer>
+        <a
+          title="GitHub"
+          target="_blank"
+          href="https://github.com/CarlaBruckmann"
+          class="fab fa-github"
+        ></a>
+        <a
+          title="Linkedin"
+          target="_blank"
+          href="https://www.linkedin.com/in/carla-bruckmann-271576ba/"
+          class="fab fa-linkedin"
+        ></a>
+        <a
+          title="CodePen"
+          target="_blank"
+          href="https://codepen.io/carlabruckmann"
+          class="fab fa-codepen"
+        ></a>
+        <a
+          title="Free Code Camp"
+          target="_blank"
+          href="https://www.freecodecamp.org/carlabruckmann"
+          class="fab fa-free-code-camp"
+        ></a>
+      </footer>
+      <script src="src/main.js"></script>
+      <script
+        src="https://kit.fontawesome.com/ec6c9f4d17.js"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+  </body>
+</html>

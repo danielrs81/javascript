@@ -4,25 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador</title>
+    <title>Tabuada 2</title>
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
     <header>
-        <h1>Vamos contar</h1>
+        <h1>Tabuada 2</h1>
 
     </header>
     <section>
         <div>
-            <p>Inicio: <input type="number" name="ini" id="ii"></p>
-            <p>Fim: <input type="number" name="fin" id="if"></p>
-            <p>Passo: <input type="number" name="passo" id="ip"></p>
-            <p><input type="button" value="Contar" onclick="contador()"></p>
-
-
+            <p>Número: <input type="number" name="num" id="it">
+                <input type="button" value="Gerar Tabuada" onclick="tabuada()"></p>
         </div>
-        <div id="res">
-            Vamos começar a contagem.....
+        <div>
+            <select name="tabuada" id="iselect"  size="10">
+                <option>Digite um número acima</option>
+            </select>
         </div>
 
     </section>

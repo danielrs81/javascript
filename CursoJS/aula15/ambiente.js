@@ -3,7 +3,7 @@ num[3] = 6
 num.push(1)
 num.length
 num.sort()
-
+ 
 
 
 console.log(num)

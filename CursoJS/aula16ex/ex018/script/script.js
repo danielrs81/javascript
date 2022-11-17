@@ -1,3 +1,4 @@
+/*
 let num = window.document.getElementById('fnum')
 let lista = window.document.getElementById('flista')
 let res = window.document.getElementById('res')
@@ -30,3 +31,26 @@ function adicionar() {
     }
 
 }
+*/
+
+function adicionar() {
+    let num = Number(window.document.getElementById('fnum').value)
+    let lista = window.document.getElementById('flista')
+    let res = window.document.getElementById('res')
+    let valores = []
+
+    if (num == 0 || num > 100) {
+        window.alert('Valor inválido ou já encontrado na lista.')
+    } else {
+         //valores = document.createElement('opcao')
+         //item.push(num)
+
+         let item = document.createElement('option')
+         item.value = num
+         //tab.appendChild(item)
+         item.push(num)
+       
+    }
+    res.innerHTML = `Valores ${item}`
+}
+

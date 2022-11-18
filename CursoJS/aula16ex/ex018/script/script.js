@@ -25,7 +25,11 @@ function inLista(n, 1) {
 
 function adicionar() {
     if(isNumero(num.value) && !inLista(num.value, valores)) {
-        window.alert('Tudo Ok')
+        //window.alert('Tudo Ok')
+        valores.push(Number(num.value))
+        let item = document.createElement('option')
+        item.text = `Valor ${num.value} adcionado.`
+        lista.appendChild(item)
     } else {
         window.alert('Valor inválido ou já encontrado na lista.')
     }
@@ -33,24 +37,28 @@ function adicionar() {
 }
 */
 
+/*
+let num = window.document.getElementById('fnum')
+let lista = window.document.getElementById('flista')
+let res = window.document.getElementById('res')
+let valores = []
+
 function adicionar() {
-    let num = Number(window.document.getElementById('fnum').value)
-    let lista = window.document.getElementById('flista')
-    let res = window.document.getElementById('res')
-    let valores = []
+
 
     if (num == 0 || num > 100) {
         window.alert('Valor inválido ou já encontrado na lista.')
     } else {
-         //valores = document.createElement('opcao')
-         //item.push(num)
 
-         let item = document.createElement('option')
-         item.value = num
-         //tab.appendChild(item)
-         item.push(num)
+        valores.push(Number(num.value))
+        let item = document.createElement('option')
+        item.text = `Valor ${num.value} adcionado.`
+        lista.appendChild(item)
+
        
     }
-    res.innerHTML = `Valores ${item}`
+    res.innerHTML = `Valores ${valores}`
 }
+
+*/
 

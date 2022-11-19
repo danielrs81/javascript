@@ -1,4 +1,4 @@
-/*
+
 let num = window.document.getElementById('fnum')
 let lista = window.document.getElementById('flista')
 let res = window.document.getElementById('res')
@@ -35,30 +35,3 @@ function adicionar() {
     }
 
 }
-*/
-
-/*
-let num = window.document.getElementById('fnum')
-let lista = window.document.getElementById('flista')
-let res = window.document.getElementById('res')
-let valores = []
-
-function adicionar() {
-
-
-    if (num == 0 || num > 100) {
-        window.alert('Valor inválido ou já encontrado na lista.')
-    } else {
-
-        valores.push(Number(num.value))
-        let item = document.createElement('option')
-        item.text = `Valor ${num.value} adcionado.`
-        lista.appendChild(item)
-
-       
-    }
-    res.innerHTML = `Valores ${valores}`
-}
-
-*/
-

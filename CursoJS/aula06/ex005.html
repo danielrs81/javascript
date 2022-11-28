@@ -21,8 +21,17 @@
 
 
     <script>
+        // window.document.write('Olá Mundo') // Maneira mais simples de escrever na tela, não recomendada
+
+        //window.document.write(window.document.characterSet)
+
+       // window.document.write(window.document.URL)
+
         var corpo = window.document.body
+        corpo.style.background = 'black'
+
         var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write(p1.innerHTML)
         /* window.document.write('Está escrito assim: ' + p1.innerText)
         corpo.style.background = 'gray'
         p1.style.color = 'blue'
@@ -33,6 +42,7 @@
         //d.innerText = 'Olá!'
         //var d = window.document.getElementsByClassName('msg')[0]
         //d.innerText = 'Olá!'
+        var d = window.document.getElementById('msg')
         var d = window.document.querySelector('div#msg')
         d.style.background = 'RED'
     </script>

@@ -51,30 +51,30 @@
 
 <body>
     <h1>Somando valores</h1>
+
     <section>
         <div>
-            <p><strong>Primeiro valor:</strong> <input type="number" name="txt1" id="txt1"></p>
-            <p>+</p>
-            <p><strong>Segundo valor:</strong> <input type="number" name="txt2" id="txt2"></p>
-            <input type="button" value="Somar" onclick="somar()">
+            <p>1º valor: <input type="number" name="txt1" id="txt1"></p>
+            <p><strong>+</strong></p>
+            <p>2º valor: <input type="number" name="txt2" id="txt2"></p>
+            <p><input type="button" value="Somar" onclick="somar()"></p>
+
         </div>
         <div id="res">
-            <p>Resultado......</p>
-
+            <p>Resultado.....</p>
         </div>
     </section>
 
     <script>
         function somar() {
-            var n1 = Number(window.document.getElementById('txt1').value)
-            var n2 = Number(window.document.getElementById('txt2').value)
-            //var res = window.document.getElementById('res')
-            //var n1 = Number(tn1.value)
-            //var n2 = Number(tn2.value)
-            var s = n1 + n2
-            res.innerHTML = `A Soma de ${n1} e ${n2} é = <strong>${s}</strong>`
-    }
+            let n1 = Number(window.document.querySelector('input#txt1').value)
+            let n2 = Number(window.document.querySelector('input#txt2').value)
+   
 
+            let s = n1 + n2
+
+            res.innerHTML = `A soma entre ${n1} e ${n2} é ${s}`
+        }
     </script>
 </body>
 

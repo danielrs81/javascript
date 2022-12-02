@@ -41,7 +41,7 @@
             width: 100px;
             font-family: Arial, Helvetica, sans-serif;
             color: black;
-            font-size: 2em;
+            font-size: 1.6em;
         }
         div#res {
             margin-top: 50px;
@@ -51,31 +51,30 @@
 
 <body>
     <h1>Somando valores</h1>
-
     <section>
         <div>
             <p>1º valor: <input type="number" name="txt1" id="txt1"></p>
-            <p><strong>+</strong></p>
+            <p>+</p>
             <p>2º valor: <input type="number" name="txt2" id="txt2"></p>
             <p><input type="button" value="Somar" onclick="somar()"></p>
-
         </div>
+
         <div id="res">
-            <p>Resultado.....</p>
+            Resultado.........
         </div>
     </section>
 
     <script>
         function somar() {
-            let n1 = Number(window.document.querySelector('input#txt1').value)
-            let n2 = Number(window.document.querySelector('input#txt2').value)
-   
-
+            let n1 = Number(document.getElementById('txt1').value)
+            let n2 = Number(document.getElementById('txt2').value)
             let s = n1 + n2
-
-            res.innerHTML = `A soma entre ${n1} e ${n2} é ${s}`
+            let res = document.getElementById('res')
+            res.innerHTML = `A soma de ${n1} + ${n2} é = ${s}`
         }
+
     </script>
+
 </body>
 
 </html>

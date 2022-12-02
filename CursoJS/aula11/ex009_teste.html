@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <section>
+        <div>
+            <p>Em que país você nasceu?</p>
+            <p>Digite aqui: <input type="text" name="nome" id="inome"></p>
+            <p><input type="button" value="Enviar" onclick="testar()"></p>
+
+        </div>
+
+        <div id="res">
+    
+
+        </div>
+
+    </section>
+
+    <script>
+        function testar() {
+            let pais = window.document.getElementById('inome').value
+            let res = window.document.getElementById('res')
+            let pais2 = pais.toUpperCase()
+
+            if (pais2 == 'BRASIL') {
+                res.innerHTML = `Você nasceu no ${pais2}, você é brasileiro`
+            } else {
+                res.innerHTML = 'Você é Extrangeiro'
+            }
+            res.innerHTML += '<p>Seja bem vindo!</p>' 
+            
+        }
+        
+    </script>
+    
+</body>
+</html>

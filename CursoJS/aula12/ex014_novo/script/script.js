@@ -1,21 +1,18 @@
 function carregar() {
-    var msg = window.document.getElementById('msg')
-    var img = window.document.getElementById('imagem')
-    var data = new Date()
-    var hora = data.getHours()
-    msg.innerHTML = `Agora são ${hora} horas.`
-    if (hora >= 0 && hora < 12) {
-        //Bom dia
+    let msg = window.document.getElementById('msg')
+    let img = window.document.getElementById('imagem')
+    let hora = new Date()
+    let agora = hora.getHours()
+    msg.innerHTML = `Agora são ${agora} horas.`
+
+    if(agora >= 0 && agora < 12) {
         img.src = './imagens/manha.png'
-        document.body.style.background = '#f6b08c'
-    } else if (hora >= 12 && hora <= 18) {
-        //Boa tarde
+        document.body.style.background = '#43314c'
+    } else if (agora >= 12 && agora < 18) {
         img.src = './imagens/tarde.png'
-        document.body.style.background = '#88c1c0'
+        document.body.style.background = '#43314c'
     } else {
-        //Boa noite
         img.src = './imagens/noite.png'
         document.body.style.background = '#43314c'
     }
-
 }
